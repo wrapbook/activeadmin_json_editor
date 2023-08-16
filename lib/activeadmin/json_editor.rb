@@ -6,7 +6,7 @@ module ActiveAdmin
   module JsonEditor
     class Engine < ::Rails::Engine
       initializer "activeadmin.json_editor.precompile" do |app|
-        app.config.assets.precompile += %w(img/jsoneditor-icons.png)
+        app.config.assets.precompile += %w(img/jsoneditor-icons.png active_admin/json_editor.js active_admin/json_editor.css)
       end
 
       rake_tasks do
